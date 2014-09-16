@@ -1,0 +1,53 @@
+<h1 class="text-center">Register</h1>
+<hr>
+<form class="form-horizontal" role="form" ng-submit="save(data)">
+  	<div class="form-group">
+  	  	<label for="name" class="col-sm-2 control-label">Name</label>
+  	 	<div class="col-sm-10">
+  	      	<input ng-model="data.name" type="text" class="form-control" id="name" placeholder="name">
+  	  	</div>
+  	</div>
+  	<div class="form-group">
+    	<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    	<div class="col-sm-10">
+       		<input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="data.email">
+    	</div>
+  	</div>
+  	<div class="form-group">
+    	<label for="phone" class="col-sm-2 control-label">Phone</label>
+    	<div class="col-sm-10">
+       		<input type="phone" class="form-control" id="phone" placeholder="Phone number" ng-model="data.phone">
+    	</div>
+  	</div>
+  	<div class="form-group">
+  		<label class="col-sm-2 control-label">Available</label>
+  		<div class="col-sm-10">
+	        <label>
+	        <input ng-model="data.canwork.mon" ng-click="canworkCheck(mon, data.canwork.mon)" type="checkbox"> Monday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.tue" ng-click="canworkCheck(tue, data.canwork.tue)" type="checkbox"> Tuesday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.wed" ng-click="canworkCheck(wed, data.canwork.wed)" type="checkbox"> Wednesday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.thu" ng-click="canworkCheck(thu, data.canwork.thu)" type="checkbox"> Thursday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.fri" ng-click="canworkCheck(fri, data.canwork.fri)" type="checkbox"> Friday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.sat" ng-click="canworkCheck(sat, data.canwork.sat)" type="checkbox"> Saturday
+	        </label>
+	        <label>
+	        <input ng-model="data.canwork.sun" ng-click="canworkCheck(mon, data.canwork.mon)" type="checkbox"> Sunday
+	        </label>
+	    </div>    
+        </div>
+  	<div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	        <button type="submit" class="btn btn-default">REGISTER</button>
+	    </div>
+    </div>  
+</form>

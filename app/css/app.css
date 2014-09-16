@@ -1,0 +1,22 @@
+.navbar-header {
+    background: #00A1CD;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+/*.navbar-brand {
+    float: none;
+}*/
+#white {
+    color: white;
+}
+a:hover {
+	text-decoration: none;
+}
+.availableToday {
+	padding: 0 20px;
+}
+.availableToday.yes {
+	color:tomato;
+}

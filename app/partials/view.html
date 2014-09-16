@@ -1,0 +1,38 @@
+<div class="row">
+
+    <div class="panel panel-default">
+      	<div class="panel-heading">
+			<h2>{{contact.name}}</h2>
+      	</div>
+     	<div class="panel-body">
+			<p class="email" ng-show="contact.email">{{contact.email}}</p>
+			<p class="phone" ng-show="contact.phone">{{contact.phone}}</p>
+     	</div>
+    </div>
+    <div class="panel panel-default">
+      	<div class="panel-heading">Available Day 
+      	<span class="availableToday yes" ng-show="availableToday(contact)">
+      		( Today : YES )
+      	</span>
+      	<span class="availableToday" ng-hide="availableToday(contact)">
+      		( Today : NO )
+      	</span>
+      	</div>
+     	<div class="panel-body">
+        	<span ng-show="{{contact.canwork.mon}}" class="label label-primary">Monday</span>
+        	<span ng-show="{{contact.canwork.tue}}" class="label label-primary">Tuesday</span>
+        	<span ng-show="{{contact.canwork.wed}}" class="label label-primary">Wednesday</span>
+        	<span ng-show="{{contact.canwork.thu}}" class="label label-primary">Thursday</span>
+        	<span ng-show="{{contact.canwork.fri}}" class="label label-primary">Friday</span>
+        	<span ng-show="{{contact.canwork.sat}}" class="label label-danger">Saturday</span>
+        	<span ng-show="{{contact.canwork.sun}}" class="label label-danger">Sunday</span>
+      </div>
+    </div>
+
+    <hr/>
+    <hr/>
+    <a class="btn btn-left back" href="#/">Go Back</a>
+    <a class="btn" href="#/edit/{{contact.id}}">Edit</a>
+
+</div>
+
